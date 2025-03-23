@@ -1,0 +1,46 @@
+beautifulsoup4
+requests
+nltk
+textblob
+pandas
+gtts
+streamlit
+
+
+"""
+                          User Interaction
+                                |
+                     ┌───────────────┐
+                     | Frontend (UI) |
+                     | (Streamlit)   |
+                     └───────▲───────┘
+                             │
+      ┌──────────────────────┼──────────────────────┐
+      │                      │                      │
+┌───────────┐        ┌──────────────┐        ┌────────────────┐
+| News Scraper | ----> | Sentiment     | ----> | Comparative      |
+| (BeautifulSoup) |    | Analysis (NLTK) |      | Analysis (Custom) |
+└───────────┘        └──────────────┘        └────────────────┘
+      │                                             │
+      └──────────────────────┬──────────────────────┘
+                             ▼
+                     ┌───────────────┐
+                     |   Hindi TTS   |
+                     |    (gTTS)     |
+                     └───────────────┘
+                             │
+                             ▼
+                     ┌────────────────┐
+                     | API Response    |
+                     | JSON Output +   |
+                     | Playable Audio  |
+                     └────────────────┘
+                             │
+                             ▼
+                     ┌───────────────┐
+                     | Deployment     |
+                     | Hugging Face   |
+                     └───────────────┘
+
+
+"""
